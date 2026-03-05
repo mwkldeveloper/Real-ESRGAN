@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RealESRGAN"
+version = "1.0"
+description = "Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "BSD-3-Clause" }
+authors = [
+    { name = "Sberbank AI" },
+    { name = "Xintao Wang" },
+]
+dependencies = [
+    "numpy>=1.26.1",
+    "opencv-python",
+    "Pillow",
+    "torch>=2.1.2",
+    "torchvision>=0.16.2",
+    "tqdm",
+    "huggingface-hub",
+]
+
+[project.urls]
+Homepage = "https://github.com/ai-forever/Real-ESRGAN"
+
+[tool.setuptools.packages.find]
+include = ["RealESRGAN*"]
